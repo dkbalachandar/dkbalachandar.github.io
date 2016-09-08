@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Health Statistics application</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Health Statistics</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#smoking-stats-map">Statistics</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+  
+    <header>
+        <div class="header-content" id="about">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Health Statistics Application</h1>
+                <hr>
+                <p>It displays the <a href="#smoking-stats-map" class="stats-href">Smoking</a>,<a href="#asthma-stats-map" class="stats-href">Asthma</a>, <a class="stats-href" href="#mentalhealth-stats-map" class="stats-href">Poor Mental Health</a> and <a class="stats-href" href="#obesity-stats-map">Obesity</a> Statistics.<br/>
+                    The statistics are displayed per gender and also Race/Ethnicity.                    
+                </p>         
+                <a href="#stats" class="btn btn-primary btn-xl page-scroll">Click Here to view</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="stats">
+        <div class="container" id="smoking-stats-map">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Smoking Adults Statistics Map across US states(2014)</h2>
+                    <hr class="light">
+                    <div id="smoking-geochart-colors" style="width: 800px; height: 433px;"></div>
+                    <br/>
+                    <br/>
+                    <p class="text-faded">
+                        Data represent adults who reported that they currently smoke every day or some days. Percentages are weighted to reflect population characteristics.<br/>
+                        <br/>
+                        <B>Source:</B><br/>
+                        KCMU analysis of the Centers for Disease Control and Prevention (CDC)'s Behavioral Risk Factor Surveillance System (BRFSS) 2014 Survey Results.<br/>
+                        http://kff.org/state-category/health-status/smoking
+                    </p>
+                    <a href="#smoking-stats" id="smoking-stats-link" class="page-scroll btn btn-default btn-xl sr-button" style="display:none;"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="smoking-stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" >
+                    <h2>Current State:<span id="smoking-currentState"></span></h2>
+                    <div id="smoking-piechart-gender" style="width: 50%; height: 433px;float:left;">
+                    </div>
+                    <div id="smoking-piechart-race" style="width: 50%; height: 433px;float:right;">
+                    </div>
+                    Not sufficient data available for some Race/Ethnicity. So we show only the available data in the chart and show the Race/Ethnicity in the datapoints.
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary">
+        <div class="container" id="asthma-stats-map">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Adult Self-Reported Current Asthma Prevalence Rate Statistics Map across US states(2014)</h2>
+                    <hr class="light">
+                    <div id="asthma-geochart-colors" style="width: 800px; height: 433px;"></div>
+                    <br/>
+                    <br/>
+                    <p class="text-faded">
+                        Data represent adults who reported that they have been told by a doctor that they have asthma. Percentages are weighted to reflect population characteristics.<br/>
+                        <br/>
+                        <B>Source:</B><br/>
+                        KCMU analysis of the Centers for Disease Control and Prevention (CDC)'s Behavioral Risk Factor Surveillance System (BRFSS) 2014 Survey Results.<br/>
+                        http://kff.org/state-category/health-status/asthma
+                    </p>
+                    <a href="#asthma-stats" id="asthma-stats-link" class="page-scroll btn btn-default btn-xl sr-button" style="display:none;"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="asthma-stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" >
+                    <h2>Current State:<span id="asthma-currentState"></span></h2>
+                    <div id="asthma-piechart-gender" style="width: 50%; height: 433px;float:left;">
+                    </div>
+                    <div id="asthma-piechart-race" style="width: 50%; height: 433px;float:right;">
+                    </div>
+                    Not sufficient data available for some Race/Ethnicity. So we show only the available data in the chart and show the Race/Ethnicity in the datapoints.
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Poor Mental Adults Statistics Map across US states(2014)</h2>
+                    <hr class="light">
+                    <div id="mentalhealth-geochart-colors" style="width: 800px; height: 433px;"></div>
+                    <br/>
+                    <br/>
+                    <p class="text-faded">
+                        Data represent adults who reported that their mental health was "not good" between one and 30 days in the past 30 days. Percentages are weighted to reflect population characteristics.<br/>
+                        <br/>
+                        <B>Source:</B><br/>
+                        KCMU analysis of the Centers for Disease Control and Prevention (CDC)'s Behavioral Risk Factor Surveillance System (BRFSS) 2014 Survey Results.<br/>
+                        http://kff.org/state-category/health-status/mental-health
+                    </p>
+                    <a href="#mentalhealth-stats" id="mentalhealth-stats-link" class="page-scroll btn btn-default btn-xl sr-button" style="display:none;"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mentalhealth-stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" >
+                    <h2>Current State:<span id="mentalhealth-currentState"></span></h2>
+                    <div id="mentalhealth-piechart-gender" style="width: 50%; height: 433px;float:left;">
+                    </div>
+                    <div id="mentalhealth-piechart-race" style="width: 50%; height: 433px;float:right;">
+                    </div>
+                    Not sufficient data available for some Race/Ethnicity. So we show only the available data in the chart and show the Race/Ethnicity in the datapoints.
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Obesity Adults Statistics Map across US states(2014)</h2>
+                    <hr class="light">
+                    <div id="obesity-geochart-colors" style="width: 800px; height: 433px;"></div>
+                    <br/>
+                    <br/>
+                    <p class="text-faded">
+                         An adult who has a BMI between 25 and 29.9 is considered overweight. An adult who has a BMI of 30 or higher is considered obese.
+                        <br/>
+                          Data based on the Behavioral Risk Factor Surveillance System, an ongoing, state-based, random-digit-dialed telephone survey of non-institutionalized civilian adults aged 18 years 
+                          and older. Information about the BRFSS is available at http://www.cdc.gov/brfss/index.html.
+                        <br/>
+                        <B>Source:</B><br/>
+                        KCMU analysis of the Centers for Disease Control and Prevention (CDC)'s Behavioral Risk Factor Surveillance System (BRFSS) 2014 Survey Results.<br/>
+                        http://kff.org/state-category/health-status/mental-health
+                    </p>
+                    <a href="#obesity-stats" id="obesity-stats-link" class="page-scroll btn btn-default btn-xl sr-button" style="display:none;"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obesity-stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" >
+                    <h2>Current State:<span id="obesity-currentState"></span></h2>
+                    <div id="obesity-piechart-gender" style="width: 50%; height: 433px;float:left;">
+                    </div>
+                    <div id="obesity-piechart-race" style="width: 50%; height: 433px;float:right;">
+                    </div>
+                    Not sufficient data available for some Race/Ethnicity. So we show only the available data in the chart and show the Race/Ethnicity in the datapoints.
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Like it? Send a mail</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>xxx-xx-xxxx</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">dkbalachandar@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="./js/smoking.gender.data.js"></script>
+    <script type="text/javascript" src="./js/asthma.gender.data.js"></script>
+    <script type="text/javascript" src="./js/asthma.race.data.js"></script>
+    <script type="text/javascript" src="./js/obesity.gender.data.js"></script>
+    <script type="text/javascript" src="./js/obesity.race.data.js"></script>
+    <script type="text/javascript" src="./js/smoking.race.data.js"></script>
+    <script type="text/javascript" src="./js/mentalhealth.gender.data.js"></script>
+    <script type="text/javascript" src="./js/mentalhealth.race.data.js"></script>
+    <script type="text/javascript" src="./js/chartdata.js"></script>
+</body>
+</html>

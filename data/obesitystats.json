@@ -1,0 +1,214 @@
+[
+  {
+    "location": "Alabama",
+    "percentage": 0.67
+  },
+  {
+    "location": "Alaska",
+    "percentage": 0.648
+  },
+  {
+    "location": "Arizona",
+    "percentage": 0.64
+  },
+  {
+    "location": "Arkansas",
+    "percentage": 0.706
+  },
+  {
+    "location": "California",
+    "percentage": 0.597
+  },
+  {
+    "location": "Colorado",
+    "percentage": 0.574
+  },
+  {
+    "location": "Connecticut",
+    "percentage": 0.604
+  },
+  {
+    "location": "Delaware",
+    "percentage": 0.674
+  },
+  {
+    "location": "District of Columbia",
+    "percentage": 0.549
+  },
+  {
+    "location": "Florida",
+    "percentage": 0.622
+  },
+  {
+    "location": "Georgia",
+    "percentage": 0.657
+  },
+  {
+    "location": "Hawaii",
+    "percentage": 0.581
+  },
+  {
+    "location": "Idaho",
+    "percentage": 0.657
+  },
+  {
+    "location": "Illinois",
+    "percentage": 0.638
+  },
+  {
+    "location": "Indiana",
+    "percentage": 0.665
+  },
+  {
+    "location": "Iowa",
+    "percentage": 0.669
+  },
+  {
+    "location": "Kansas",
+    "percentage": 0.66
+  },
+  {
+    "location": "Kentucky",
+    "percentage": 0.667
+  },
+  {
+    "location": "Louisiana",
+    "percentage": 0.689
+  },
+  {
+    "location": "Maine",
+    "percentage": 0.645
+  },
+  {
+    "location": "Maryland",
+    "percentage": 0.649
+  },
+  {
+    "location": "Massachusetts",
+    "percentage": 0.589
+  },
+  {
+    "location": "Michigan",
+    "percentage": 0.656
+  },
+  {
+    "location": "Minnesota",
+    "percentage": 0.641
+  },
+  {
+    "location": "Mississippi",
+    "percentage": 0.707
+  },
+  {
+    "location": "Missouri",
+    "percentage": 0.656
+  },
+  {
+    "location": "Montana",
+    "percentage": 0.63
+  },
+  {
+    "location": "Nebraska",
+    "percentage": 0.667
+  },
+  {
+    "location": "Nevada",
+    "percentage": 0.635
+  },
+  {
+    "location": "New Hampshire",
+    "percentage": 0.636
+  },
+  {
+    "location": "New Jersey",
+    "percentage": 0.631
+  },
+  {
+    "location": "New Mexico",
+    "percentage": 0.649
+  },
+  {
+    "location": "New York",
+    "percentage": 0.611
+  },
+  {
+    "location": "North Carolina",
+    "percentage": 0.656
+  },
+  {
+    "location": "North Dakota",
+    "percentage": 0.688
+  },
+  {
+    "location": "Ohio",
+    "percentage": 0.667
+  },
+  {
+    "location": "Oklahoma",
+    "percentage": 0.682
+  },
+  {
+    "location": "Oregon",
+    "percentage": 0.617
+  },
+  {
+    "location": "Pennsylvania",
+    "percentage": 0.641
+  },
+  {
+    "location": "Rhode Island",
+    "percentage": 0.624
+  },
+  {
+    "location": "South Carolina",
+    "percentage": 0.67
+  },
+  {
+    "location": "South Dakota",
+    "percentage": 0.652
+  },
+  {
+    "location": "Tennessee",
+    "percentage": 0.671
+  },
+  {
+    "location": "Texas",
+    "percentage": 0.678
+  },
+  {
+    "location": "Utah",
+    "percentage": 0.595
+  },
+  {
+    "location": "Vermont",
+    "percentage": 0.602
+  },
+  {
+    "location": "Virginia",
+    "percentage": 0.647
+  },
+  {
+    "location": "Washington",
+    "percentage": 0.634
+  },
+  {
+    "location": "West Virginia",
+    "percentage": 0.696
+  },
+  {
+    "location": "Wisconsin",
+    "percentage": 0.674
+  },
+  {
+    "location": "Wyoming",
+    "percentage": 0.646
+  },
+  {
+    "location": "Guam",
+    "percentage": 0.634
+  },
+  {
+    "location": "Puerto Rico",
+    "percentage": 0.659
+  }
+]
